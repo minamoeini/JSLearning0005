@@ -28,6 +28,7 @@ root.removeChild(c2);
 root.insertBefore(myol,c1);
 //document.write("dasdasd"); //like console log.
 
+
 //different way of add event:
 //1:
 //c1.setAttribute("onclick","alert('y');");
