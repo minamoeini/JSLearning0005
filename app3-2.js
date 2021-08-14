@@ -26,13 +26,22 @@ myol.appendChild(li1);
 //root.replaceChild(myol,c1);
 root.removeChild(c2);
 root.insertBefore(myol,c1);
+//document.write("dasdasd"); //like console log.
 
+//different way of add event:
+//1:
 //c1.setAttribute("onclick","alert('y');");
-//document.write("dasdasd");
-
+//2:
 // function handleClickC1(){
 //     alert('AAA');
 // }
+//c1.onclick = handleClickC1;
+
+//3: here we dont add event. we tell if click. this function call. then you dont see any thin in tag html
+//this way is better and also yo can add more event there
+//handleClickC1 is the refrence of functin. we dont call it.we just send refrence . if we pass handleClickC1(), we are calling it and result is undefiend
+//and pass unddefiend to addEventListener
+//c1.addEventListener('click',handleClickC1);
 function handleClickC1(){
     
     alert('AAA');
