@@ -142,8 +142,8 @@ const person2={
 
 //bind
 
-//person1.sayHi();
-//person1.sayHi = person1.sayHi.bind(person2);
+person1.sayHi();
+person1.sayHi = person1.sayHi.bind(person2);
 
 person1.sayHi();
 
@@ -158,4 +158,4 @@ const person55={
 
 const person66 = person55;
 
-console.log(person66 == person55);
+console.log(person66 === person55);
